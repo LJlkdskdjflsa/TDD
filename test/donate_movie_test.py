@@ -1,6 +1,6 @@
 import unittest
 from dataclasses import dataclass
-from donate_movie import Movie,Library
+from donate_movie import Movie, Library
 
 
 class DonateMovieTest(unittest.TestCase):
@@ -10,13 +10,11 @@ class DonateMovieTest(unittest.TestCase):
         self.library.donate(self.movie)
 
     def test_donated_movie_add_to_library(self):
-        self.assertTrue(self.library.contains(self.movie)) 
+        self.assertTrue(self.library.contains(self.movie))
 
     def test_copy_added(self):
-        self.assertEqual(1, self.movie.get_copies()) 
+        self.assertEqual(1, self.movie.get_copies())
 
 
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

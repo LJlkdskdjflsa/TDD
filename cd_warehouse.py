@@ -18,3 +18,16 @@ Receiving batch of CD:
 - Copies of 1 CD not in catalogue -> CD add to catalogue with copies
 - Multiple CD in batch -> add any missing CDs to catalogue, add copies each CD
 """
+
+from dataclasses import dataclass
+
+
+@dataclass
+class CD:
+    _stock: int = 0
+
+    def get_stock_count(self) -> int:
+        return self._stock
+
+    def buy(self, quntity):
+        self._stock -= quntity
