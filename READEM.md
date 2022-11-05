@@ -6,3 +6,4 @@
 1. shopping_basket_test
 2. donate_movie_test
 3. cd_warehouse_test
+4. mars_rover_test 
